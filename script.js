@@ -45,7 +45,7 @@ document.onkeydown = function (event) {
 };
 
 function drawEnemies() {
-  document.querySelector("#enemies").innerHTML = ``;
+  document.querySelector("#enemies").innerHTML = "";
   enemies.forEach((pos) => {
     document.querySelector(
       "#enemies"
