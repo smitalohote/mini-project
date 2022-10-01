@@ -4,6 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space Invaders</title>
     <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="background">
+      <div id="hero"></div>
+      <div id="missiles"></div>
+      <div id="enemies"></div>
+    </div>
     <script>
       let hero = {
         left: 575,
@@ -126,13 +134,5 @@
       }, 200);
       drawEnemies();
     </script>
-  </head>
-
-  <body>
-    <div id="background">
-      <div id="hero"></div>
-      <div id="missiles"></div>
-      <div id="enemies"></div>
-    </div>
   </body>
 </html>
