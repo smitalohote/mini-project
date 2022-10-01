@@ -28,7 +28,6 @@ document.onkeydown = function (event) {
   const left = 37;
   const right = 39;
   const space = 32;
-  console.log(event.keyCode);
   if (event.keyCode == left && hero.left >= 20) {
     hero.left = hero.left - 10;
     document.querySelector("#hero").style.left = hero.left;
@@ -39,7 +38,6 @@ document.onkeydown = function (event) {
   }
   if (event.keyCode == space) {
     missiles.push({ left: hero.left + 20, top: hero.top - 20 });
-    console.log(missiles);
     drawMissiles();
   }
 };
@@ -98,7 +96,6 @@ function gameEnd() {
     document.onkeydown = null;
   } else {
     for (enemy = 0; enemy < enemies.length; enemy++) {
-      console.log(hero.top, enemies[enemy].top);
       if (enemies[enemy].top >= hero.top - 40) {
         res = document.createElement("div");
         res.classList.add("result");
